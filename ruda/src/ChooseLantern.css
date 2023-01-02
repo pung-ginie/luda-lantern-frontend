@@ -1,0 +1,61 @@
+.wrapperr {
+    width: 60%;
+    height: 1000px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+p {
+    font-size: 30px;
+    text-align: center;
+}
+.lantern_wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height : 300px;
+}
+.lanternA {
+    width : 300px;
+    height : 300px;
+    margin-left : 5%;
+}
+.lanternA:focus {
+    filter: drop-shadow(0 2px 100px #FFFEC9);
+}
+.lanternB:focus {
+    filter: drop-shadow(0 2px 100px #FFFEC9);
+}
+.lanternC:focus {
+    filter: drop-shadow(0 2px 100px #FFFEC9);
+}
+.lanternB {
+    width : 300px;
+    height : 300px;
+}
+.lanternC {
+    width : 300px;
+    height : 300px;
+}
+.choose_button {
+    position: relative;
+    top:20%;
+    margin-left: 25%;
+    background-color:#161950;
+    color: #FFFEC9;
+    border:none;
+    border-radius: 35px;
+    min-height: 100px; 
+    min-width: 500px;
+    font-size: 30px;
+    border-style:solid;
+    border-color: #FFFEC9;
+    z-index: 2;
+    cursor: pointer;
+}
+.choose_button:focus {
+    background-color: #FFFEC9;
+    color : #161950;
+}
