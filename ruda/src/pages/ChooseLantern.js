@@ -1,5 +1,5 @@
 import React from "react";
-import "./ChooseLantern.css";
+import "../styles/ChooseLantern.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 function ChooseLantern() {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import SignUp from "./signUp";
-import Home from "./Home";
-import About from "./About";
-import ChooseLantern from "./ChooseLantern";
-import MakeWish from "./MakeWish";
-import FlyLantern from "./FlyLantern";
+import SignUp from "./pages/signUp";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ChooseLantern from "./pages/ChooseLantern";
+import MakeWish from "./pages/MakeWish";
+import FlyLantern from "./pages/FlyLantern";
 import "./App.css";
 function App() {
   return (

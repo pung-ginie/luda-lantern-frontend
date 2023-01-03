@@ -1,5 +1,5 @@
 import React from "react";
-import "./MakeWish.css";
+import "../styles/MakeWish.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 function MakeWish() {
   return (

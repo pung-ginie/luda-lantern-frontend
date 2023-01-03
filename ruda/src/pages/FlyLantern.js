@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import "./FlyLantern.css";
+import "../styles/FlyLantern.css";
 import { css, keyframes } from '@emotion/react'
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion"
