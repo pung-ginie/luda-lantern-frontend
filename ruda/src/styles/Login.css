@@ -1,4 +1,4 @@
-.backgrround {
+.background {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,47 +18,6 @@
   background: rgba(235, 235, 222, 0.8);
   border-radius: 30px;
 
-}
-
-.info-message{
-  position: absolute;
-  width: 614px;
-  height: 27px;
-  left: 653px;
-  top: 305px;
-
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-
-  color: #FFFEC9;
-}
-
-.button3,
-.div25,
-.login-form3 {
-  position: absolute;
-}
-.button3 {
-  top: 0;
-  left: 0;
-  border-radius: var(--br-lg);
-  background-color: var(--color-gray-200);
-  width: 456px;
-  height: 60px;
-}
-.div25 {
-  top: 10px;
-  left: 178px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 40.41px;
 }
 .login-btn{
   position: absolute;
@@ -89,53 +48,50 @@
   
   color: #FFFEC9;
 }
-
-.login-btn1 {
-
-  top: 672px;
-  left: 732px;
-  width: 456px;
-  height: 60px;
-  cursor: pointer;
-  font-family: var(--font-noto-serif);
-}
-.button4,
-.div26,
-.login-btn {
+.signup-text {
   position: absolute;
-}
-.button4 {
-  top: 0;
-  left: 0;
-  border-radius: var(--br-lg);
-  background-color: var(--color-indigo-100);
-  width: 456px;
-  height: 60px;
-}
-.div26 {
-  top: 10px;
-  left: 138px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 180px;
   height: 40px;
+  left: 138px;
+  top: 10px;
+  
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFEC9;
 }
 .signup-btn {
+  
   position: absolute;
-  top: 746px;
-  left: 732px;
   width: 456px;
   height: 60px;
-  font-family: var(--font-noto-serif);
+  left: 732px;
+  top: 746px;
+
+  background: #000445;
+  border-radius: 40px;
 }
-.div27 {
-  top: 305px;
-  left: 653px;
-  font-size: var(--font-size-sm);
-  font-weight: 500;
+.info-msg {
+  position: absolute;
   width: 614px;
+  height: 27px;
+  left: 653px;
+  top: 305px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #FFFEC9;
 }
 .div27,
 .div28,
@@ -151,14 +107,25 @@
   color: var(--color-orange);
   width: 460px;
 }
-.div29 {
-  top: 214px;
+.titles {
+  position: absolute;
+  width: 279px;
+  height: 64px;
   left: 821px;
-  font-size: var(--font-size-lg);
+  top: 214px;
+
+  font-family: 'PyeongChang Peace';
+  font-style: normal;
   font-weight: 300;
-  font-family: var(--font-pyeongchang-peace);
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFEC9;
 }
-.login-error-child {
+.login-child {
   position: absolute;
   top: 472px;
   left: 732px;
@@ -168,19 +135,60 @@
 .email,
 .password {
   position: absolute;
-  top: 435px;
-  left: 732px;
-  font-weight: 300;
-  color: var(--color-indigo-100);
-  text-align: left;
-  display: inline-block;
   width: 74px;
+  height: 33px;
+  left: 732px;
+  top: 435px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+/* identical to box height */
+
+
+color: #000445;
+
+}
+
+.input-box{
+  box-sizing: border-box;
+
+position: absolute;
+width: 458px;
+height: 49px;
+left: 726px;
+top: 427px;
+
+border-bottom: 1px solid #000045;
 }
 .password {
-  top: 542px;
   width: 132px;
+  height: 33px;
+  left: 732px;
+  top: 542px;
 }
-.login-error {
+.error-message{
+  position: absolute;
+  width: 460px;
+  height: 22px;
+  left: 730px;
+  top: 631px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+/* identical to box height */
+
+  text-align: center;
+
+  color: #D15E0A;
+
+}
+.login {
   position: relative;
   background-color: var(--color-white);
   width: 100%;
