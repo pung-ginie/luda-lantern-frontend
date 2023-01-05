@@ -12,10 +12,6 @@ function Info() {
     </Router>
       <div className="ruda_wrapper">
         <img className="rudaImage" alt="rudaImage" src="img/ruda.png" />
-        {/* <img className="rudaLogo" alt="rudaLogo" src="img/ruda_logo.png" />
-        <img className="rudaName" alt="rudaName" src="img/ruda_name.png" />
-        <p>루다는 후드티를 쓰고 있는 흑토끼입니다.
-달에서 지구로 왔지만 추위를 잘 타 사람의 후드티를 빌려 입고 다닙니다. 후드티가 너무 커서 모자부분은 매듭으로 묶었답니다. 달에 사는 가족들이 그리워 풍등에 편지를 적어 올리려고 합니다. 루다가 띄운 풍등이 달까지 갈 수 있을까요?</p> */}
       </div>
       <div className="ruda_info_wrapper">
       <img className="rudaLogo" alt="rudaLogo" src="img/ruda_logo.png" />
