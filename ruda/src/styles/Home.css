@@ -18,6 +18,7 @@
     font-size: 30px;
     z-index: 2;
   }
+
   .start_button {
     position: absolute;
     top:40%;
@@ -48,7 +49,25 @@
     border-color: #FFFEC9;
     z-index: 2;
 }
-button:hover {
+.info_button {
+  position: absolute;
+    top: 2.5%;
+    margin-left: 85%;
+    background-color:#161950;
+    color:#FFFEC9;
+    /* border:none; */
+    border-radius: 100px;
+    border-width: 5px;
+    min-height: 40px; 
+    min-width: 40px;
+    font-size: 20px; 
+    border-style:solid;
+    border-color: #FFFEC9;
+    z-index: 2;
+}
+
+/* hover 시 불빛나게 하기 */
+button:not(.info_button):hover {
   border-radius: 35px;
   border-style: solid;
   border-color: #FFFEC9;
