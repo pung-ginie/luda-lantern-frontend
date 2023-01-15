@@ -1,5 +1,5 @@
 import React from "react";
-import "./ChooseLantern.css";
+import "../styles/ChooseLantern.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 function ChooseLantern() {
   return (
@@ -11,10 +11,10 @@ function ChooseLantern() {
           <img className="lanternA" alt="lanternA" src="img/lanternA.png" tabindex="0" />
           <img className="lanternB" alt="lanternB" src="img/lanternB.png" tabindex="1"/>
           <img className="lanternC" alt="lanternC" src="img/lanternC.png" tabindex="2"/>
-          <Link to="/makewish">
-          <button className="choose_button">선택하기</button>
-          </Link>
         </div>
+        <Link to="/makewish">
+          <button className="choose_button">선택하기</button>
+        </Link>
     </div>
     </>
   );

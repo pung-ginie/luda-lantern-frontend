@@ -1,6 +1,7 @@
 import React from "react";
-import "./MakeWish.css";
+import "../styles/MakeWish.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import FlyLantern from "./FlyLantern";
 function MakeWish() {
   return (
     <>
@@ -10,7 +11,7 @@ function MakeWish() {
         <textarea className="materialize-textarea"
           placeholder="소원을 적으면 소원이 이루어집니다."></textarea>
           <div className="button_wrapper">
-            <button className="wish_button">완료하기</button>
+            <Link to="/flyLantern"><button className="wish_button">완료하기</button></Link>
           </div>
           
     </div>

@@ -1,0 +1,54 @@
+/* .ruda_wrapper {
+    position: relative;
+    width: 30%;
+    height : 1000px;
+    left : 10%;
+    background-color: aliceblue;
+} */
+.ruda_wrapper>.rudaImage {
+    width : 800px;
+    height: 800px;
+    position: fixed;
+    top : 10%;
+}
+.ruda_info_wrapper {
+    /* background-color: aqua; */
+    position: relative;
+    width: 50%;
+    height:1000px;
+    left: 40%;
+    /* float: left; */
+    margin-top: 3%;
+}
+.rudaLogo {
+    position: relative;
+    /* float: left; */
+    left: 50%;
+    top: 7%;
+    /* margin-top: 2%; */
+}
+.rudaName {
+    position: relative;
+    /* float: left; */
+    left: -10%;
+    /* margin-top: 5%; */
+}
+.ruda_wrapper>p {
+    position: relative;
+    
+}
+.home_button {
+    position: absolute;
+    top:60%;
+    margin-left: 25%;
+    background-color:#161950;
+    color:#FFFEC9;
+    /* border:none; */
+    border-radius: 35px;
+    min-height: 100px; 
+    min-width: 500px;
+    font-size: 30px; 
+    border-style:solid;
+    border-color: #FFFEC9;
+    z-index: 2;
+}
