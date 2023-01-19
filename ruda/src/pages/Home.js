@@ -13,7 +13,7 @@ function Home() {
         <button className="info_button">i</button>
         </Link>
         {/* 버튼 클릭시 '시작하기' 페이지로 */}
-        <Link to="/signup">
+        <Link to="/signin">
           <button className="start_button">시작하기</button>
         </Link>
          {/* 버튼 클릭시 '풍등 보러가기' 페이지로 */}
