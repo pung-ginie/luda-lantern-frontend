@@ -1,17 +1,19 @@
 .form-control {
     text-align: center;
     position: relative;
-    margin-left: 28%;
+    /* margin-left: 28%; */
     background-color: #161950;
     color: #FFFEC9;
     width: 500px;
     height: 300px;
-    margin-bottom: auto;
+    top: 50px;
+    /* margin-bottom: auto; */
+    margin : 0 auto;
 }
 .form-control input{
-    position: relative;
-    text-align: center;
-    margin-left: 35%;
+    /* position: relative;
+    text-align: center; */
+    /* margin-left: 35%; */
     border-radius: 15px;
     background-color:#161950;
     color: #FFFEC9;
@@ -20,7 +22,8 @@
     font-size: 20px;
     border-style:solid;
     border-color: #FFFEC9;
-    margin-bottom: 15px;
+    margin : 5%;
+    /* margin-bottom: 15px; */
 }
 input::placeholder{
     padding: 10px;
