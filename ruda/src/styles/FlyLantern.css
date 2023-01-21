@@ -2,14 +2,47 @@
     margin: 0 auto;
     width: 60%;
 }
+
+
 .flyLantern1 {
-    width : 500px;
-    height : 500px;
+   
+    
+    width: 700px;
+    height: 700px;
+    left: 610px;
+    top: 236px;
     margin-left: 35%;
     margin-top: 15%;
-    position: relative;
     display:block;
     z-index:1;
+ 
+    
+}
+.flyLanternmv {
+   
+    width : 700px;
+    height : 700px;
+    left: 610px;
+    top: 236px;
+    margin-left: 35%;
+    margin-top: 15%;
+   
+    display:block;
+ 
+    
+}
+.flyLantern2 {
+    
+    width : 700px;
+    height : 700px;
+    left: 610px;
+    top: 236px;
+    margin-left: 35%;
+    margin-top: 15%;
+    
+    display:block;
+    z-index:1;
+    
 }
 
 .box {
@@ -32,10 +65,28 @@
       0 10px 15px 0 hsla(0, 0%, 0%, 0.05);
       z-index : 9;
   }
+
   
 .lanternAfly {
-    width : 100px;
-    height: 100px;
+    position: absolute;
+width: 484px;
+height: 484px;
+left: 712px;
+top: 446px;
+
+background:radial-gradient(43.96% 43.96% at 50% 50%, rgba(255, 251, 46, 0.5) 44.27%,
+ rgba(217, 217, 217, 0) 100%);
+
+}
+.lantern{
+
+    position: absolute;
+    width: 254px;
+    height: 307px;
+    left: 833px;
+    top: 495px;
+    
+
 }
 .scroll-text {
     font-size: 5rem;
