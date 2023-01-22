@@ -55,15 +55,16 @@ function SignIn(props) {
             placeholder="Enter email" onChange={handleLogin} />
             <input type="password" name="password" value={userInfo.password} className="password" 
             placeholder="Enter password" onChange={handleLogin} />
+             <div className="login_btn">
+          <button className="wish_buttons" onClick={handleSignin}>로그인!</button>
+          <Link to="/signup">
+            <button className="signup_buttons">회원가입!</button>
+          </Link>
+          </div>
           <div>
             
           </div>
-          <div className="login_btn">
-          <button className="wish_buttons" onClick={handleSignin}>로그인!</button>
-          <Link to="/signup">
-            <button className="wish_buttons">회원가입!</button>
-          </Link>
-          </div>
+         
           </div>
     </div>
   }
