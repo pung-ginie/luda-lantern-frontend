@@ -6,6 +6,7 @@ import "../styles/FlyLantern.css";
 import { css, keyframes } from '@emotion/react'
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion"
+import AOS from "aos";
 
 
 
@@ -32,10 +33,12 @@ function FlyLantern() {
     
 
     }
-
   },100),[])
+
+
  
   useEffect(()=>{
+    AOS.init();
 
     window.addEventListener('scroll',onScrollFn)
     return()=>{
@@ -54,6 +57,7 @@ function FlyLantern() {
 }
 
 
+ 
 
 return(
     <>
@@ -65,10 +69,14 @@ return(
 
 
           </img>
-          <div className="lanternAfly" alt="lanternAfly">
-           
+
+
+          <div className="floating">
+          <div className="lanternAfly" >
             </div>
-            <img className="lantern" alt="lantern" src='img/lanternA.png'/>
+            <img className="lantern" alt="lantern" src='img/lanternA.png'
+            data-aos="fade-up"/>
+          </div>
         
       </div>
     </>

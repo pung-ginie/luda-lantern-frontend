@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "PyeongChang Peace";
+  src: url("../public/PyeongChangPeace-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("../public/PyeongChangPeace-Bold.ttf");
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-noto-sans: "Noto Sans";
+  --font-noto-serif: "Noto Serif";
+  --font-pyeongchang-peace: "PyeongChang Peace";
+
+  /* font sizes */
+  --font-size-sm: 16px;
+  --font-size-base: 24px;
+  --font-size-lg: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-indigo-100: #000445;
+  --color-indigo-200: #000045;
+  --color-gray-100: rgba(217, 217, 217, 0);
+  --color-black: #000;
+  --color-beige-100: #fffec9;
+  --color-beige-200: rgba(235, 235, 222, 0.8);
+
+  /* border radiuses */
+  --br-sm: 30px;
+  --br-md: 40px;
+}
