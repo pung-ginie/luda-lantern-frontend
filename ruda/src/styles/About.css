@@ -46,7 +46,7 @@ top: 140px;
 left: 180px;
 z-index: 2;
 color: blanchedalmond;
-font-size: 40px;
+font-size: 35px;
 }
 
 .wish_btn1 {
@@ -58,7 +58,7 @@ top: 700px;
 left: 300px;
 z-index: 2;
 color: blanchedalmond;
-font-size: 40px;
+font-size: 35px;
 }
 
 .wish_btn2 {
@@ -70,7 +70,7 @@ top: 170px;
 left: 200px;
 z-index: 2;
 color: blanchedalmond;
-font-size: 40px;
+font-size: 35px;
 }
 
 .wish_btn3 {
@@ -82,7 +82,7 @@ border: none;
 top: 400px;
 z-index: 2;
 color: blanchedalmond;
-font-size: 40px;
+font-size: 35px;
 }
 
 .wish_btn4 {
@@ -95,12 +95,12 @@ top: 700px;
 left: 70px;
 z-index: 2;
 color: blanchedalmond;
-font-size: 40px;
+font-size: 35px;
 }
 
 
 .mywish{
 width: 150px;
 height: 150px;
-margin: -20px;
+margin: -15px;
 }
