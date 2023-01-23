@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/SignUp.css";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const SignUp = ({onCreate}) =>  {
 
   const [userInfo, setState] = useState({
@@ -46,9 +46,9 @@ const SignUp = ({onCreate}) =>  {
 };
 
     return <div className="sign_wrapper">
-          <h2>루다의 소원등</h2>
+          <h2>회원가입</h2>
           <p>본 계정은 풍등을 보관하고 공유하는 목적으로 사용됩니다.</p>
-          <div className="form-control">
+          <div className="form-control2">
           <div>
             <input type="input" name="username" value={userInfo.username} className="name" 
             placeholder="Enter name" onChange={handleLogin} />
@@ -66,7 +66,10 @@ const SignUp = ({onCreate}) =>  {
             placeholder="다시 한번 더 입력해주세요" onChange={handleLogin} />
           </div>
           <div>
-          <button className="wish_buttons" onClick={handleSignUp}>회원가입!</button>
+          <button className="signin_buttons" onClick={handleSignUp}>가입하기</button>
+          <p className="signin">이미 계정이 있습니까?</p><Link to="/signin" style={{ textDecoration: 'none' }}>
+          <p className="signin">로그인하기</p>
+          </Link>
           </div>
           </div>
     </div>

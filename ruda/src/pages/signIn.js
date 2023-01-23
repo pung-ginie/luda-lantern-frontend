@@ -50,20 +50,21 @@ function SignIn(props) {
           <h2>루다의 소원등</h2>
           <p>본 계정은 풍등을 보관하고 공유하는 목적으로 사용됩니다.</p>
           <div className="form-control">
-          <div>
+          
             <input type="email" name="email" value={userInfo.id} className="email" 
             placeholder="Enter email" onChange={handleLogin} />
-          </div>
-          <div>
             <input type="password" name="password" value={userInfo.password} className="password" 
             placeholder="Enter password" onChange={handleLogin} />
-          </div>
-          <div className="login_btn">
+             <div className="login_btn">
           <button className="wish_buttons" onClick={handleSignin}>로그인!</button>
           <Link to="/signup">
-            <button className="wish_buttons">회원가입!</button>
+            <button className="signup_buttons">회원가입!</button>
           </Link>
           </div>
+          <div>
+            
+          </div>
+         
           </div>
     </div>
   }

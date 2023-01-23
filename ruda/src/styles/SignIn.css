@@ -1,47 +1,63 @@
+
+
 .form-control {
     text-align: center;
     position: relative;
-    margin-left: 28%;
-    background-color: #161950;
-    color: #FFFEC9;
-    width: 500px;
-    height: 300px;
-    margin-bottom: auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    margin : 0 auto;
+    background-color: #EBEBDECC;
 }
 .form-control input{
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    border-bottom: 3px #161950 solid;
+    background-color:transparent; 
+    margin : 0 auto;
     position: relative;
-    text-align: center;
-    margin-left: 35%;
-    border-radius: 15px;
-    background-color:#161950;
-    color: #FFFEC9;
-    width: 300px;
+    top: 10%;
+    margin-top: 10%;
+    display: block;
+    width: 458px;
     height: 70px;
     font-size: 20px;
-    border-style:solid;
-    border-color: #FFFEC9;
-    margin-bottom: 15px;
 }
 input::placeholder{
     padding: 10px;
-    color: #fafadd;
+    color: #161950;
 }
 .login_btn{
     text-align: center;
-    padding: 10px 10px;
+    position: relative;
+    display: block;
+    top: 5%;
 }
 
 .wish_buttons {
-    /* top:40%;*/
-    background-color:#161950;
-    color: #FFFEC9;
+    display: block;
+    position: relative;
+    background: #6F72B4;
+    border-radius: 40px;
+    width: 456px;
+    height: 60px;
     border:none;
-    border-radius: 35px;
-    min-height: 70px; 
-    min-width: 170px;
     font-size: 30px;
-    border-style:solid;
-    border-color: #FFFEC9;
-    /* z-index: 2; */
+    color: #FFFEC9;
+    margin: 0 auto;
+    margin-top: 10%;
 }
-
+.signup_buttons {
+    display: block;
+    position: relative;
+    background: #161950;
+    border-radius: 40px;
+    width: 456px;
+    height: 60px;
+    border:none;
+    font-size: 30px;
+    color: #FFFEC9;
+    margin: 0 auto;
+    top: 20px;
+}
