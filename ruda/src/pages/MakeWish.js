@@ -63,6 +63,8 @@ const MakeWish = ({onCreate}) => {
       document.location.href = "/flylantern";
   }).catch(function(error){
     console.log(error);
+    alert("소원 가능 갯수를 넘으셨습니다! ");
+    document.location.href = "/";
   });
     alert("complete");
 };
