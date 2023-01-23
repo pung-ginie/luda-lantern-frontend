@@ -78,7 +78,16 @@ return(
             data-aos="fade-up"/>
           </div>
         
-        <div className="up_sign"></div>
+          <div className="parent">
+        <div className="div1">
+          <span className="txt">
+            <p className="p">밀어올려</p>
+            <p className="p1">풍등 띄우기</p>
+          </span>
+        </div>
+        <img className="union-icon" alt="" src="img/union.svg" />
+      </div>
+        
       </div>
     </>
 )
