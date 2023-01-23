@@ -6,56 +6,61 @@ import axios from "axios";
 const MakeWish = ({onCreate}) => {
 
   const location = useLocation();
-  //console.log(location);
 
-  const lantern_number = location.state.lanternType.lanternType;
-  console.log(lantern_number);
+  let lantetnNumber = location.state.lanternType.lanternType;
 
-  const [toggle , setToggle] = useState(undefined);
+  if(lantetnNumber === 'A'){
+    lantetnNumber = 1;
+
+  }else if(lantetnNumber === 'B'){
+    lantetnNumber = 2;
+  }else{
+    lantetnNumber = 3;
+  }
+  const [toggle , setToggle] = useState(true);
   const textInput = useRef();
 
-  const [state, setState] = useState({  
+  const [mylantern, setLantern] = useState({  
     wish: "",
-    is_public: toggle,
-    lantern_number : lantern_number,
+    public: toggle,
+    lantetnNumber : lantetnNumber,
   }); 
-
-//처음에 언디파인으로 줘서 두번 눌러야 true/false 값이 지정됨  여기 이상!!!
   const isOpen = (e) => {
+    setLantern({
+      ...mylantern,
+      [e.target.name] : e.target.checked,
+  });
     setToggle((toggle) => !toggle);
     console.log(toggle);
-
-    setState({
-      ...state,
-      [e.target.name] : toggle,
-  });
   };
 
   const handleChangeState = (e) => {
-    setState({
-        ...state,
+    setLantern({
+        ...mylantern,
         [e.target.name] : e.target.value,
     });
 }
   const handleSubmit = (e)=> {
-    console.log(state);
-    if(state.is_public === undefined){
+    console.log(mylantern);
+
+    if(mylantern.public === undefined){
       alert("공개 여부를 선택해 주세요");
       return;
     }
-    if(state.wish.length < 3){
+    if(mylantern.wish.length < 3){
         textInput.current.focus();
         return;
     }
-    onCreate(state.lantern_number, state.wish, state.is_public);
+
+    onCreate(mylantern.lantetnNumber, mylantern.wish, mylantern.public);
 
     axios.post('http://luda-lantern-api-service.ap-northeast-2.elasticbeanstalk.com/v1/lantern/', { 
-      is_public : state.is_public,
-      lantern_number : state.lantern_number,
-      wish : state.wish,
+      public : mylantern.public,
+      lantetnNumber : mylantern.lantetnNumber,
+      wish : mylantern.wish,
     }).then(function(response){
       console.log(response);
-    document.location.href = "/flylantern/" + lantern_number;
+      document.location.href = "/flylantern";
   }).catch(function(error){
     console.log(error);
   });
@@ -66,10 +71,10 @@ const MakeWish = ({onCreate}) => {
         <h2>소원적기</h2>
         <p>종이에 소원을 적어보세요</p>
         <div class="onoff-switch-container">
-          <input name="is_public" value={state.is_public} type="checkbox" id="onoff-switch1" checked={!toggle} onChange={isOpen}  />
+          <input name="is_public" value={mylantern.public} type="checkbox" id="onoff-switch1" checked={!toggle} onChange={isOpen}  />
           <label for="onoff-switch1">{toggle === true ? "비공개": "공개" } </label> 
         </div>
-        <textarea ref={textInput} name="wish" value={state.wish} className="materialize-textarea" 
+        <textarea ref={textInput} name="wish" value={mylantern.wish} className="materialize-textarea" 
         placeholder="소원을 적으면 소원이 이루어집니다." onChange={handleChangeState}>
           </textarea>
           <div className="button_wrapper">
