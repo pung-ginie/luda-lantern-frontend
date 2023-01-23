@@ -87,6 +87,12 @@ return(
         </div>
         <img className="union-icon" alt="" src="img/union.svg" />
       </div>
+
+      <div className="vector-parent">
+        <img className="frame-child" alt="" src="img/vector-4.svg" />
+        <img className="frame-child" alt="" src="img/vector-4.svg" />
+        <div className="skip">SKIP</div>
+      </div>
         
       </div>
     </>

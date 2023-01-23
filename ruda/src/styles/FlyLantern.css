@@ -151,4 +151,51 @@ background:radial-gradient(43.96% 43.96% at 50% 50%, rgba(255, 251, 46, 0.5) 44.
     color: var(--color-beige);
     font-family: var(--font-pyeongchang-peace);
   }
-  
+
+  .frame-child {
+    position: relative;
+    width: 23.68px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  .skip {
+    position: relative;
+    font-weight: 300;
+    width: 109px;
+    height: 64px;
+    font-family: 'PyeongChang Peace';
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 64px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFEC9;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+  }
+  .vector-parent {
+    position: absolute;
+    top: 923px;
+    left: 1667px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .p1 {
+    margin: 0;
+  }
