@@ -78,6 +78,7 @@ return(
             data-aos="fade-up"/>
           </div>
         
+        <div className="up_sign"></div>
       </div>
     </>
 )
