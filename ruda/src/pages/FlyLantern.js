@@ -6,54 +6,96 @@ import "../styles/FlyLantern.css";
 import { css, keyframes } from '@emotion/react'
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion"
+import AOS from "aos";
 
 
-function ChooseLantern() {
-  
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  };
-  
-  useEffect(() => {
-    window.addEventListener("scroll", updateScroll);
-  }, []);
-  
-    // const boxRef = useRef<HTMLDivElement>(null);
-    // const replies = [
-    //     {
-    //       id: '1',
-    //       photo: 'img/lanternAfly.png',
-    //     },
-    //     {
-    //       id: '2',
-    //       photo: '🐱',
-    //     },
-    //     {
-    //       id: '3',
-    //       photo: '🐰',
-    //     },
-    //   ];
-    // const boxRef = useRef(null);
-  return (
-    <>
-    {/* <div className="wrap">
-    <img className="flyLantern1" alt="flyLantern1" src="img/fly_lantern1.png" />
-      <div className="box" ref={boxRef}>
-        <motion.img
-          className="lanternAfly"
-          src={"img/lanternAfly.png"}
-          drag
-          dragDirectionLock
-          dragConstraints={boxRef}
-          dragSnapToOrigin
-          dragElastic={0.5}
-          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
-        />
-      </div>
-    </div> */}
-    <div className={scrollPosition > 1000 ? "scroll-text" : "scrolled-text"}>스크롤되면 색이 변합니다!</div>
-    </>
-  );
+
+function FlyLantern() {
+  const ludaImg = [
+    {id:1, image:'img/fly_lantern1.PNG', title:'루다1'},
+    {id:2, image:'img/fly_lantern_mone.png', title:'루다2'}
+  ]
+  const [luda, setLuda] = useState(ludaImg) 
+  const [scrollEvent, setScrollEvent] = useState(false)
+  const onScrollFn = useMemo (()=> throttle(()=> {
+    if(window.scrollY<10){
+      setScrollEvent('img/fly_lantern1.PNG')
+    } 
+    else if(window.screenY>10){
+      if(window.screen<15){
+        setScrollEvent('img/fly_lantern_mone.png')
+
+      }
+      else{
+        setScrollEvent('img/fly_lantern2.PNG')
+      }
+    
+    
+
+    }
+  },100),[])
+
+
+ 
+  useEffect(()=>{
+    AOS.init();
+
+    window.addEventListener('scroll',onScrollFn)
+    return()=>{
+      window.removeEventListener('scroll',onScrollFn)
+    }
+  },[])
+
+  let boxStyle = {
+    width: '40%',
+    height: '200px',
+    fontSize: '30px',
+    lineHeight: '200px',
+    background: 'black',
+    color: 'white',
+    textAlign: 'center'
 }
-export default ChooseLantern;
+
+
+ 
+
+return(
+    <>
+      <div className="fly_lantern">
+        
+        <img className="flyLanternmv" alt="flyLanternmv" src={scrollEvent}
+    
+            data-aos="fade-up">
+
+
+          </img>
+
+
+          <div className="floating">
+          <div className="lanternAfly" >
+            </div>
+            <img className="lantern" alt="lantern" src='img/lanternA.png'
+            data-aos="fade-up"/>
+          </div>
+        
+          <div className="parent">
+        <div className="div1">
+          <span className="txt">
+            <p className="p">밀어올려</p>
+            <p className="p1">풍등 띄우기</p>
+          </span>
+        </div>
+        <img className="union-icon" alt="" src="img/union.svg" />
+      </div>
+
+      <div className="vector-parent">
+        <img className="frame-child" alt="" src="img/vector-4.svg" />
+        <img className="frame-child" alt="" src="img/vector-4.svg" />
+        <div className="skip">SKIP</div>
+      </div>
+        
+      </div>
+    </>
+)
+}
+export default FlyLantern;
