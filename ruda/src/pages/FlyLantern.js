@@ -61,13 +61,9 @@ function FlyLantern() {
 
 return(
     <>
-      <div className="fly_lantern">
-        
+      <div className="fly_lantern">       
         <img className="flyLanternmv" alt="flyLanternmv" src={scrollEvent}
-    
             data-aos="fade-up">
-
-
           </img>
 
 
@@ -91,7 +87,11 @@ return(
       <div className="vector-parent">
         <img className="frame-child" alt="" src="img/vector-4.svg" />
         <img className="frame-child" alt="" src="img/vector-4.svg" />
+
+        <Link to = "/">
         <div className="skip">SKIP</div>
+        </Link>
+         
       </div>
         
       </div>
