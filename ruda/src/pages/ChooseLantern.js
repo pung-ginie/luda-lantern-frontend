@@ -16,6 +16,7 @@ const ChooseLantern = () => {
 
   return (
     <div className="wrapperr">
+      <div id="banner"></div>
         <h2>풍등고르기</h2>
         <p>원하는 풍등 디자인을 선택하세요</p>
         <div className="lantern_wrapper">

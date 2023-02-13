@@ -46,7 +46,8 @@ const SignUp = ({onCreate}) =>  {
 };
 
     return <div className="sign_wrapper">
-          <h2>회원가입</h2>
+          <div id="banner"></div>
+          <div className="title">회원가입</div>
           <p>본 계정은 풍등을 보관하고 공유하는 목적으로 사용됩니다.</p>
           <div className="form-control2">
           <div>

@@ -1,10 +1,23 @@
-
-
+#banner {
+    height: 50px;
+    text-align: center;
+}
+.sign_wrapper {
+    height: 633px;
+    width: 411px;
+    position: relative;
+    margin: 0 auto;
+}
+.title_wrapper{
+    text-align: center;
+    font-size: 40px;
+}
 .form-control {
+    top: 8%;
     text-align: center;
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 350px;
+    height: 550px;
     border-radius: 15px;
     margin : 0 auto;
     background-color: #EBEBDECC;
@@ -20,7 +33,8 @@
     top: 10%;
     margin-top: 10%;
     display: block;
-    width: 458px;
+    /* width: 458px; */
+    width: 300px;
     height: 70px;
     font-size: 20px;
 }
@@ -32,7 +46,7 @@ input::placeholder{
     text-align: center;
     position: relative;
     display: block;
-    top: 5%;
+    top: 25%;
 }
 
 .wish_buttons {
@@ -40,10 +54,12 @@ input::placeholder{
     position: relative;
     background: #6F72B4;
     border-radius: 40px;
-    width: 456px;
-    height: 60px;
+    /* width: 456px;
+    height: 60px; */
+    width: 245px;
+    height: 39.12px;
     border:none;
-    font-size: 30px;
+    font-size: 14px;
     color: #FFFEC9;
     margin: 0 auto;
     margin-top: 10%;
@@ -53,10 +69,10 @@ input::placeholder{
     position: relative;
     background: #161950;
     border-radius: 40px;
-    width: 456px;
-    height: 60px;
+    width: 245px;
+    height: 39.12px;
     border:none;
-    font-size: 30px;
+    font-size: 14px;
     color: #FFFEC9;
     margin: 0 auto;
     top: 20px;
