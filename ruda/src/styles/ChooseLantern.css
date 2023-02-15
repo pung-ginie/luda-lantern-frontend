@@ -1,12 +1,8 @@
 .wrapperr {
-    /* width: 60%;
-    height: 1000px;
-    margin: 0 auto; */
     height: 633px;
     width: 411px;
     position: relative;
     margin: 0 auto;
-    /* background-color: pink; */
 }
 h2 {
     font-size: 40px;
@@ -32,13 +28,13 @@ p {
     /* margin-left : 5%; */
 }
 .A:focus {
-    filter: drop-shadow(0 2px 100px #FFFEC9);
+    filter: drop-shadow(0 2px 100px #fffb00);
 }
 .B:focus {
-    filter: drop-shadow(0 2px 100px #FFFEC9);
+    filter: drop-shadow(0 2px 100px #fffb00);
 }
 .C:focus {
-    filter: drop-shadow(0 2px 100px #FFFEC9);
+    filter: drop-shadow(0 2px 80px #fffb00);
 }
 .B {
     width : 180px;
@@ -57,8 +53,6 @@ p {
     display: block;
     margin: 0 auto;
     top: 7%;
-    /* top: 3%;
-    margin-left: 25%; */
     background-color:#161950;
     color: #FFFEC9;
     border:none;

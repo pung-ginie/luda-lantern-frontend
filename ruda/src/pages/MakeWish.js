@@ -70,7 +70,8 @@ const MakeWish = ({onCreate}) => {
 };
 
   return <div className="wrapper_wish">
-        <h2>소원적기</h2>
+    <div id="banner"></div>
+        <div className="wish_title">소원적기</div>
         <p>종이에 소원을 적어보세요</p>
         <div class="onoff-switch-container">
           <input name="is_public" value={mylantern.public} type="checkbox" id="onoff-switch1" checked={!toggle} onChange={isOpen}  />
